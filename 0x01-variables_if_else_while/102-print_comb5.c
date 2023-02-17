@@ -8,29 +8,37 @@
 
 int main(void)
 {
-	int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-	while (num1 <= num1max)
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
+
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
-		num2 = num1 + 1;
-		while (num2 <= num2max)
-		{
-			putchar(num1 < 9 ? 0 + '0' (num1 / 10) + '0');
-			putchar(num1 < 9 ? num1 + '0' 1 (num1 % 10) + '0');
-			putchar(' ');
-			putchar(num2 < 9 ? 0 + '0' (num2 / 10) + '0');
-			putchar(num2 < 9 ? num2 * '0' 1 (num2 % 10) + '0');
-
-			if (num1 != num1max)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			num2++;
-		}
-		num1++;
-	}
-	putchar('\n');
 	
-	return (0);	
+		for (ten = 0 ; ten < 10 ; ten++)
+		{
+			for ( bas = 0 ; bas < 10 ; bas++)
+			{
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
+				{
+					putchar(',');
+					putchar(32);
+				}
+				bas++;
+			}
+		}
+	}
 }
+	putchar('\n');
+	return (0);
+}
+
