@@ -1,15 +1,19 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-	int a;
-	a = _putchar;
-	_putchar("a");
+	char *sh = "_putchar";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
 	_putchar('\n');
+
 	return (0);
 }
