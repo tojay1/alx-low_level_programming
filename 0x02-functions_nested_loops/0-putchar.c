@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-void word()
+int main()
 {
 	char _putchar;
 	_putchar("_putchar");
