@@ -5,9 +5,10 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void word()
 {
-	_putchar('_putchar');
+	char _putchar;
+	_putchar("_putchar");
 	_putchar('\n');
 	return (0);
 }
