@@ -15,7 +15,7 @@ int main(void)
 
 for (tho = 0 ; tho < 10 ; tho++)
 {	
-
+	bas++;
 	for (hun = 0 ; hun < 10 ; hun++)
 	{
 	
@@ -36,7 +36,6 @@ for (tho = 0 ; tho < 10 ; tho++)
 			}
 		}
 	}
-	bas++;
 }
 	putchar('\n');
 	return (0);
