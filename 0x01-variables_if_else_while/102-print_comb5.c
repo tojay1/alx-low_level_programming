@@ -28,7 +28,7 @@ for (tho = 0 ; tho < 10 ; tho++)
 				putchar(32);
 				putchar('0' + ten);
 				putchar('0' + bas);
-				if (!(tho == 9 && hun == 8))
+				if (tho == 9 && hun == 8)
 				{
 					putchar(',');
 					putchar(32);
